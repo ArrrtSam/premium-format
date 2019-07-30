@@ -1,0 +1,10 @@
+#hamburger-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  padding-top: 15px;
+  @media screen and (min-width: $medium-devices) {
+    display: none;
+  }
+}

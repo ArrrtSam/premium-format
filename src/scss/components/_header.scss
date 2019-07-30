@@ -1,0 +1,148 @@
+
+.brown-bg{
+  background: #333;
+}
+.header-top{
+  font-size: 10px;
+  align-items: center;
+  height: 27px;
+  color: #fff;
+  justify-content: center;
+  a{
+    color: #fff;
+    &:hover{
+      color: #fff;
+    }
+  }
+}
+.map-point-block{
+  a{
+    margin-left: 6px;
+  }
+  display: none;
+  @media screen and (min-width: $medium-devices) {
+  display: block;
+  }
+}
+.base-block{
+  img{
+    position: relative;
+    top: 11px;
+    transition: all ease 0.5s;
+  }
+  p{
+    position: relative;
+    top: -8px;
+    left: 24px;
+    transition: all ease 0.5s;
+
+  }
+  @media screen and (min-width: $medium-devices) {
+    margin-left: 5%;
+  }
+  @media screen and (min-width: $extra-large-devices) {
+    margin-left: 28.5%;
+  }
+}
+.exchange-rates-block{
+  display: none;
+  margin-top: 17px;
+  @media screen and (min-width: $medium-devices) {
+    margin-left: 3%;
+    display: block;
+  }
+  @media screen and (min-width: $extra-large-devices) {
+    margin-left: 17%;
+  }
+}
+.header-top-soc{
+  margin-left: 0.8%;
+  margin-top: 15px;
+  display: none;
+  li:not(:last-child){
+    margin-right: 9px;
+  }
+  @media screen and (min-width: $medium-devices) {
+    display: block;
+  }
+}
+.shadow-header{
+  -webkit-box-shadow: 0px 3px 21px rgba(100, 100, 100, 0.49);
+  -moz-box-shadow: 0px 3px 21px rgba(100, 100, 100, 0.49);
+  box-shadow: 0px 3px 21px rgba(100, 100, 100, 0.49);
+}
+.header-main{
+  color: #000;
+  height: 57px;
+  justify-content: space-between;
+  a{
+    color: #000;
+  }
+  @media screen and (min-width: $medium-devices) {
+    justify-content: center;
+  }
+}
+.logo{
+  padding-top: 6px;
+}
+nav{
+  padding: 12px 0;
+  display: none;
+  .nav-list{
+    li:not(:last-child){
+      margin-right: 50px;
+    }
+    a{
+      font-size: 13px;
+      box-shadow: 0px 0px 0px 0px #ec6764 inset;
+      &:hover{
+        box-shadow: 0px -4px 0px 0px #ec6764 inset;
+      }
+    }
+  }
+  @media screen and (min-width: $medium-devices) {
+    margin-left: 1%;
+    display: block;
+  }
+  @media screen and (min-width: $extra-large-devices) {
+    margin-left: 8.5%;
+  }
+}
+.phone-link{
+  display: none;
+  font-size: 22px;
+  padding-top: 9px;
+  @media screen and (min-width:  $large-devices) {
+    margin-left: 3%;
+    display: block;
+  }
+  @media screen and (min-width: $extra-large-devices) {
+    margin-left: 15.5%;
+  }
+}
+.elementor-widget{ 
+  padding-top: 13px;
+  margin-left: 2%;
+  display: none !important;
+  @media screen and (min-width: $medium-devices) {
+    -ms-display: flexbox!important;
+    display: flex!important;
+  } 
+}
+.elementor-language{
+  position: relative;
+  margin-right: 7px;
+  p{
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    top: 6px;
+    left: 5px;
+  }
+}
+.elementor-search{
+  margin-right: 7px;
+}
+.account{
+  position: relative;
+}
