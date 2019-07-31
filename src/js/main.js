@@ -19,5 +19,6 @@ $('#hamburger-btn').click(function(e) {
 $(document).click(function(event) {
   if (!$(event.target).closest("#hamburger-btn").length) {
     $("body").find(".push-wrapper").removeClass("menu-active");
+    $("#hamburger-btn").removeClass("is-active");
   }
 });
