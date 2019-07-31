@@ -161,7 +161,7 @@
   z-index: 5;
   width: 80%;
   height: 100%;
-  left: -100%;
+  transform: translateX(-100%);
   -ms-transition: all ease 0.5s;
   -o-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
@@ -246,14 +246,9 @@
 
 .menu-active{
   .mobile-menu{
-    left: 0;
+    transform: translateX(0);
   }
   .main-content{
-    margin-left: 80%;
-  }
-  .base-block{
-    img, p{
-      left: 100%;
-    }
+    transform: translateX(80%);
   }
 }
