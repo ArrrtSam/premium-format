@@ -25,9 +25,9 @@ input, button, a{
 }
 .bg-grey{
   background: #efebe9;
-  padding: 60px 0;
 }
 .categories-sec{
+  padding: 60px 0;
   a{
     margin-bottom: 20px;
     @media screen and (min-width: $medium-devices) {
@@ -71,7 +71,113 @@ input, button, a{
 .card-3{
   background: url(../img/3.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   background-position: center;
+}
+.expert-section{
+  padding-bottom: 34px;
+  .expert-card{
+    width: 91%;
+    padding: 28px 0 8px 0;
+    margin: 12px 4.5% 15px 4.5%;
+    transition: all ease 0.3s;
+    height: 163px;
+    .card-svg{
+      margin-bottom: 5px;
+      position: relative;
+      overflow: hidden;
+      &:after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        bottom: -10px;
+        width: 26%;
+        left: 37%;
+        height: 4px;
+        background: rgba(236,103,100,.7);
+        transition: all .3s ease;
+        border-radius: 3px;
+      }
+      @media screen and (min-width: $extra-large-devices) {
+        margin-bottom: 25px;
+      }
+    }
+    &:hover{
+      background: #f4f1f0;
+      box-shadow: 0px 3px 21px rgba(100, 100, 100, 0.49);
+      .card-svg::after{
+        bottom: 0;
+      }
+    }
+    @media screen and (min-width: $small-devices) {
+      margin: 12px 0 15px 0;
+    }
+  }
+}
+.centerCard{
+  @media screen and (min-width: $medium-devices) {
+    margin: 12px 4.5% 15px 4.5% !important;
+  }
+}
+.lastCard{
+  @media screen and (min-width: $medium-devices) {
+    margin-left: 9% !important;
+  }
+}
+.news-section{
+  background: #bcb8b8;
+  padding: 55px 0 54px 0;
+}
+
+
+.news-card-block{
+  height: 261px;
+  transition: all ease 0.3s;
+  margin-top: 10px;
+  &:hover{
+    box-shadow: 0px 3px 21px rgba(100, 100, 100, 0.49);
+    .news-text{
+      padding-top: 22px;
+    }
+    .learn-more{
+      bottom: 0;
+    }
+  }
+}
+.news-1{
+  background: url(../img/news-1.png);
+}
+.news-2{
+  background: url(../img/news-2.png);
+}
+.news-3{
+  background: url(../img/news-3.png);
+}
+.news-card-body{
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  height: 100%;
+  padding: 18px;
+  overflow: hidden;
+  &::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+  }
+  .learn-more{
+    padding: 12px 21px;
+    background: #d34e4b;
+    width: 100%;
+    position: absolute;
+    bottom: -51px;
+    left: 0;
+    transition: all ease 0.3s;
+  }
 }
