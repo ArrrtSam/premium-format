@@ -8,3 +8,19 @@
     display: none;
   }
 }
+.subscription-form button{
+  background: #000;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  width: 193px;
+  padding: 8px 0;
+  svg{
+    transform: rotate(-30deg);
+    margin-right: 15px;
+  }
+  &:hover{
+    color: #fff;
+  }
+}
