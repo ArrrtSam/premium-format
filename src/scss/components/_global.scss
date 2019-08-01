@@ -10,8 +10,11 @@ a{
   }
 }
 .container{
-  padding-left: 22px;
+  padding-left: 7px;
   padding-right: 7px;
+  @media screen and (min-width: $medium-devices) {
+    padding-left: 22px;
+  }
 }
 
 li{

@@ -84,13 +84,17 @@ h2{
     content: "";
     display: inline-block;
     position: absolute;
-    left: 41%;
+    left: 25%;
     bottom: -10px;
-    width: 18%;
+    width: 50%;
     height: 4px;
     background: rgba(236,103,100,.7);
     transition: all .3s ease;
     border-radius: 3px;
+    @media screen and (min-width: $medium-devices) {
+      left: 41%;
+      width: 18%;
+    }
   }
   &:hover{
     color: #3b3b3b;
