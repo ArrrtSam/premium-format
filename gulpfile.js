@@ -11,7 +11,7 @@ const del = require("delete");
 
 sass.compiler = require("node-sass");
 
-// var arrayJs = ["./src/vendor/jquery.mask.min.js", "./src/vendor/slick.min.js", "./src/vendor/lightgallery.min.js", "./src/vendor/lg-fullscreen.min.js"]
+var arrayJs = ["./src/vendor/wow.min.js"]
 
 gulp.task("serve", () => {
   browserSync.init({
@@ -65,7 +65,7 @@ gulp.task("js", () => {
 });
 gulp.task('vendor', () => {  
   return gulp
-      .src('./src/vendor')
+      .src(arrayJs)
       .pipe(concat('vendor.js'))
       .pipe(gulp.dest('./dist/vendor.js'))
 });

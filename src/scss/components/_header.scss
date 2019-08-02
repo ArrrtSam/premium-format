@@ -143,8 +143,10 @@ nav{
   } 
 }
 .elementor-language{
-  position: relative;
   margin-right: 7px;
+  .language{
+    position: relative;
+  }
   p{
     position: absolute;
     color: #fff;

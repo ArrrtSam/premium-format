@@ -18,8 +18,9 @@ $('#hamburger-btn').click(function(e) {
 
 $(document).click(function(event) {
   event.preventDefault();
-  if (!$(event.target).closest("#hamburger-btn").length) {
+  if (!$(event.target).closest("#hamburger-btn,.mobile-menu" ).length) {
     $("body").find(".push-wrapper").removeClass("menu-active");
     $("#hamburger-btn").removeClass("is-active");
   }
 });
+new WOW().init();

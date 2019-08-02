@@ -10,10 +10,11 @@ a{
   }
 }
 .container{
-  padding-left: 7px;
-  padding-right: 7px;
+  padding-left: 3px;
+  padding-right: 3px;
   @media screen and (min-width: $medium-devices) {
     padding-left: 22px;
+    padding-right: 7px;
   }
 }
 
@@ -25,6 +26,21 @@ input, button, a{
 }
 .push-wrapper{
   overflow: hidden;
+}
+.main-content{
+  position: relative;
+  &::before{
+    display: none;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.4);
+    z-index: 4;
+
+  }
 }
 .bg-grey{
   background: #efebe9;
@@ -205,4 +221,13 @@ input, button, a{
     flex-direction: row;
     justify-content: center;
   }
+}
+.hero{
+  background: url(../img/karman.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 626px;
+
 }

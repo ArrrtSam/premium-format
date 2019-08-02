@@ -246,5 +246,9 @@
   }
   .main-content{
     transform: translateX(80%);
+    position: fixed;
+    &::before{
+      display: block;
+    }
   }
 }

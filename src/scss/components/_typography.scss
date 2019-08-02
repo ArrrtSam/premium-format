@@ -57,7 +57,10 @@ h2{
   h3{
     font-size: 24px;
     font-weight: 700;
-    margin-bottom: 23px;
+    margin-bottom: 0;
+    @media screen and (min-width: $large-devices) {
+      margin-bottom: 23px;
+    }
   }
   p{
     font-size: 12px;
@@ -103,4 +106,48 @@ h2{
     }
   }
  
+}
+.hero-text{
+  overflow: hidden;
+  color: #000;
+  margin-top: 210px;
+  .animation-1s{
+    animation: 1s linear push;
+    padding-left: 10px;
+    span{
+      font-size: 14px;
+      font-weight: 700;
+      position: relative;
+      left: 10px;
+     
+      &::before{
+        content: "";
+        position: absolute;
+        height: 30px;
+        width: 2px;
+        background-color: #333;
+        top: 6px;
+        left: -10px;
+      }
+    }
+  }
+  .animation-2s{
+    animation: 2s linear push;
+  }
+  h3{
+    font-size: 72px;
+    font-weight: 700;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+@keyframes push {
+  from {
+		transform: translateX(-100%);
+	}
+	
+	to {
+		transform: translateX(0);
+	}
 }
