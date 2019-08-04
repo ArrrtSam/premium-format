@@ -159,7 +159,7 @@
 .mobile-menu{
   position: fixed;
   z-index: 5;
-  width: 80%;
+  width: 300px;
   height: 100%;
   transform: translateX(-100%);
   -ms-transition: all ease 0.5s;
@@ -245,7 +245,7 @@
     transform: translateX(0);
   }
   .main-content{
-    transform: translateX(80%);
+    transform: translateX(300px);
     position: fixed;
     &::before{
       display: block;
