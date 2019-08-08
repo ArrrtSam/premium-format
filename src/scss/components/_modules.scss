@@ -9,10 +9,6 @@
   align-items: center;
   z-index: 3;
 }
-.df{
-  -ms-display: flexbox;
-  display: flex;
-}
 .search-form__input{
   border-color: #ffffff;
   border-width: 0px 0px 2px 0px;
@@ -52,10 +48,6 @@
   z-index: 3;
   right: 0;
   top: 35px;
-  -ms-transition: all ease 0.3s;
-  -o-transition: all ease 0.3s;
-  -moz-transition: all ease 0.3s;
-  -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s;
   opacity: 0;
 }
@@ -128,15 +120,15 @@
       border-color: #e7413d;
     }
   }
-  button{
+  button, .btns-block a{
     background-color: #e7413d;
     color: #fff;
-    font-size: 13px;
+    font-size: 11px;
     line-height: normal;
     text-transform: uppercase;
     border: 1px solid transparent;
     letter-spacing: 1px;
-    padding: 0.8rem 1.25rem;
+    padding: 0.8rem 0.25rem;
     font-weight: 600;
     width: 100%;
     margin-top: 4px;
@@ -145,6 +137,10 @@
     &:hover{
       color: #fff;
       background-color: #c52d29;
+    }
+    @media screen and (min-width: $medium-devices) {
+      font-size: 13px;
+      padding: 0.8rem 1.25rem;
     }
   }
 }
@@ -238,8 +234,6 @@
   }
 }
 
-
-
 .menu-active{
   .mobile-menu{
     transform: translateX(0);
@@ -250,5 +244,67 @@
     &::before{
       display: block;
     }
+  }
+}
+.login-module{
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.login-module-content{
+  .account-wrap{
+    &::before{
+      content: none;
+    }
+  }
+  .account-inner{
+    position: relative;
+    width: 300px;
+    padding: 17px 20px;
+    max-height: 500px;
+    @media screen and (min-width: $medium-devices) {
+      width: 520px;
+    }
+  }
+  .login-form-head{
+    border-bottom: 1px solid #eee;
+    color: #454544;
+    align-items: center;
+  }
+  .login-form-title{
+    font-size: 21px;
+  }
+  .sub-title{
+    font-size: 16px;
+  }
+  .btns-block{
+    display: flex;
+    justify-content: space-between;
+    button, a{
+      width: 45% !important;
+    }
+    
+  }
+  .close-module-toggle{
+    cursor: pointer;
+    position: absolute;
+    font-size: 35px;
+    top: 10px;
+    right: 20px;
+    z-index: 4;
+    line-height: 1;
+    color: #000;
+    font-weight: bold;
+  }
+}
+.three-d-popup, .consult-popup{
+  .login-form-head{
+    text-align: center;
   }
 }

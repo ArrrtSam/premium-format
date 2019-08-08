@@ -11,7 +11,7 @@ const del = require("delete");
 
 sass.compiler = require("node-sass");
 
-var arrayJs = ["./src/vendor/wow.min.js"]
+var arrayJs = ["./src/vendor/wow.min.js", "./src/vendor/slick.min.js", "./src/vendor/lightgallery.min.js"]
 
 gulp.task("serve", () => {
   browserSync.init({

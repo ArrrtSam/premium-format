@@ -110,16 +110,24 @@ h2{
 .hero-text{
   overflow: hidden;
   color: #000;
-  margin-top: 210px;
-  .animation-1s{
-    animation: 1s linear push;
-    padding-left: 10px;
+    display: block;
+  @media screen and (min-width: $large-devices) {
+    margin-top: 210px;
+    display: flex;
+  }
+  .hero-span{
+    margin-left: 240px;
+    margin-top: 123px;
+    @media screen and (min-width: $large-devices) {
+      margin-left: 70px;
+      margin-top: -7px;
+    }
+  }
     span{
       font-size: 14px;
       font-weight: 700;
       position: relative;
       left: 10px;
-     
       &::before{
         content: "";
         position: absolute;
@@ -130,26 +138,145 @@ h2{
         left: -10px;
       }
     }
-  }
-  .animation-2s{
-    animation: 2s linear push;
-  }
-  h3{
-    font-size: 72px;
-    font-weight: 700;
-  }
+    .hero-h3{
+      margin: 20px 0 0 0;
+      height: min-content;
+      padding: 7px 10px 8px 10px;
+      background: rgba(104,87,72,.4);
+      @media screen and (min-width: $large-devices) {
+        margin: 153px 0 0 247px;
+        padding: 7px 55px 8px 10px;
+      }
+    }
+    h3{
+      font-size: 28px;
+      font-weight: 700;
+      color: #fff;
+      @media screen and (min-width: $large-devices) {
+        font-size: 36px;
+      }
+    }
+    .hero-p{
+      margin-left: 16px;
+      @media screen and (min-width: $large-devices) {
+        margin-top: 228px;
+      }
+    }
+    p{
+      font-size: 12px;
+      font-weight: 600;
+    }
+}
+.download-block{
+  text-align: center;
+  margin-bottom: 20px;
   p{
-    font-size: 12px;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto 20px;
   }
 }
-@keyframes push {
-  from {
-    transform: translateX(-100px);
-    opacity: 0;
-	}
-	
-	to {
-    transform: translateX(0);
-    opacity: 1;
-	}
+.brand{
+  .left{
+    span{
+      color: #454544;
+      display: inline-block;
+      font-size: 24px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      text-align: left;
+      padding-bottom: 60px;
+      &:before{
+        content: '';
+        position: absolute;
+        left: 0px;
+        right: 0;
+        display: block;
+        height: 2px;
+        background: #585551;
+        bottom: 30px;
+      }
+    }
+  }
+  .right{
+    color: #454544;
+    font-size: 16px;
+    align-items: center;
+  }
+  .descr{
+    margin-bottom: 20px;
+    p{
+      color: #454544;
+      line-height: 16px;
+      text-align: justify;
+    }
+    a{
+      color: #7b3900;
+    }
+  }
+}
+.news-block{
+  .title{
+    text-align: center;
+    h1{
+      font-size: 40px;
+      font-weight: 700;
+      color: #454544;
+    }
+  }
+}
+.news-titile{
+  h3{
+    font-size: 14px;
+    line-height: 25px;
+    position: relative;
+    color: #454544;
+    display: inline-block;
+    width: 84%;
+    margin: 0 auto;
+    margin-top: 10px;
+    &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      bottom: -6px;
+      background: #577e71;
+      height: 3px;
+      width: 57px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+}
+.news-description{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 20px;
+  max-height: 158px;
+  min-height: 168px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  p{
+    text-align: justify;
+    color: #454544;
+    font-size: 14px;
+  }
+}
+.blog-bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 0 10px 10px 10px;
+  .blog-date{
+    span{
+      color: #aaa;
+    }
+  }
+  .read-next span{
+    color: #454544;
+  }
 }

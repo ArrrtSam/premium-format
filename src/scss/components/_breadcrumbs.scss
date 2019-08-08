@@ -1,0 +1,28 @@
+.breadcrumbs-block{
+  ul{
+    padding: 20px 0;
+    display: flex;
+    margin-bottom: 0;
+  }
+  li{
+    a{
+      font-size: 13px;
+      color: #000;
+      &:hover{
+        outline: 0;
+        color: #000;
+      }
+    }
+  }
+  li:not(:last-child){
+    margin-right: 20px;
+    position: relative;
+    &:after{
+      content: "/";
+      position: absolute;
+      right: -13px;
+      top: 1px;
+    }
+  }
+  
+}
